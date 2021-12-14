@@ -25,8 +25,8 @@ document.getElementById("button1").addEventListener("click", function () {
     for(i=1;i<=class_number;i++){
         //始まりの時間
         time = hours+":"+minutes
-        if(minutes==0){
-            time = hours+":00"
+        if(minutes<10){
+            time = hours+":0"+minutes
         }
         set_time.push(time)
 
@@ -38,8 +38,8 @@ document.getElementById("button1").addEventListener("click", function () {
         }
         minutes = minutes-parseInt(minutes/60)*60
         time = hours+":"+minutes
-        if(minutes==0){
-            time = hours+":00"
+        if(minutes<10){
+            time = hours+":0"+minutes
         }
         set_time.push(time)
         
