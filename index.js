@@ -68,3 +68,6 @@ document.getElementById("button1").addEventListener("click", function () {
     }
     text.innerHTML = result
 }, false);  
+document.getElementById("button2").addEventListener("click", function () {
+    alert("コピーしました！")
+}, false);  
