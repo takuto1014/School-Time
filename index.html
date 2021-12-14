@@ -9,24 +9,26 @@
 </head>
 <body>
     <div id="contents">
-        <p>開始時間</p>
+        <h1>学校の校時を出力します</h1>
+        <p class="heading">始業時間</p>
         <input type="time" id="start_time" value="08:40">
-        <p>1限の時間</ｐ>
+        <p class="heading">1限あたりの時間(分)</ｐ>
         <input type="number" id="class_time" value=50>
-        <p>休み時間</ｐ>
+        <p class="heading">休み時間(分)</ｐ>
         <input type="number" id="break_time" value=10>
+        
         <!-- <select name="sources" id="break_time" class="custom-select sources" placeholder="Source Type">
             <option value="5">5分</option>
             <option value="10">10分</option>
             <option value="15">15分</option>
         </select> -->
-        <p>時間数</p>
+        <p class="heading">時限数</p>
         <input type="number" id="class_number" value=6>
-        <p>昼休みの時間</p>
+        <p class="heading">昼休みの時間</p>
         <input type="number" id="lunch_time" value=40>
-        <p>昼休みは何時間目の後？</p>
+        <p class="heading">昼休みは何時間目の後？</p>
         <input type="number" id="lunch_number" value="4"><br>
-        <input id="button1" type="button" value="表示"><br>
+        <center><input id="button1" type="button" value="表示" class="btn-gradient-3d-simple button1"><br></center>
         <!-- <textarea readonly id="result" ></textarea> -->
         <div id="result"></div>
         <input type="button" id="button1" value="Copy">
