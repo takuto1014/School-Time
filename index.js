@@ -200,7 +200,7 @@ document.getElementById("button1").addEventListener("click", function () {
         }
         result =""
         for(i=1;i<=class_number;i++){
-            result = result + i+"時間目  "+set_time[i*2-2]+"～"+set_time[i*2-1]+"\n　" //←ここはLINEの改行文字
+            result = result + i+"時間目  "+set_time[i*2-2]+"～"+set_time[i*2-1]+"%0D%0A" //←ここはLINEの改行文字
         }//"改行前\n　改行後の文字列 "
-        location.href="https://line.me/R/msg/text/?"+result
+        location.href="http://line.me/R/msg/text/?"+result
     }, false); 
